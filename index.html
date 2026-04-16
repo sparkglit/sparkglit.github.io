@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/Users/macbook/Desktop/Smart_Store_Delivery/static/styles/style.css" />
+  <title>SSD - Smart Store Delivery</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="logo">
+      <h1>SSD - Smart Store Delivery</h1>
+      <p>Smart Store Delivery — Save money on multi-store orders</p>
+    </div>
+    <nav class="nav">
+      <a href="#" id="logIn">Log In</a>
+      <a href="#">Sign Up</a>
+      <a href="#">Delivery</a>
+      <a href="#">About Us</a>
+      <a href="#" id="userAccount">User Account</a>
+    </nav>
+  </header>
+  <h2 class="h2">Make your order from any shop with the best price<br>Quick start in 3 steps below</h2>
+  <button type='button' class="startButton" id="startButton">Start Now</button>
+
+  <div class="steps-container" id="stepsContainer">
+    <div class="registration-form" id="registration-form">
+      <h3 id="form-header">Step 1<br>Fill the registration-form</h3>
+      <form id="Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="button" id="nextButton">Next</button>
+        <button type="button" id="closeButton">Close</button>
+      </form>
+    </div>
+  </div>
+
+<div class="step2-location" id="step2Location">
+  <div class="location-form" id="location-form">
+      <h3>Step 2<br>Fill the location-form</h3>
+      <form id="LocationForm">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+        
+        <!-- <label for="postalCode">Postal Code:</label>
+        <input type="text" id="postalCode" name="postalCode" required> -->
+        
+        <button type="button" id="LocationButton">Submit</button>
+        <button type="button" id="closeLocationButton">Close</button>
+      </form>
+</div>
+</div>
+
+<!-- <div class="basket" id="basket">
+  <span>Basket value:</span>
+  <label class="basket-value" id="basket-value"><b>0.00</b></label>
+</div> -->
+
+
+
+
+  <script src="/Users/macbook/Desktop/Smart_Store_Delivery/scripts/script.js"></script>
+</body>
+</html>

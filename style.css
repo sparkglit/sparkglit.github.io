@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+#header {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo h1 {
+  margin-bottom: 5px;
+}
+
+.logo p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  background-color: chocolate;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.nav a:hover {
+  background-color: #ffffff;
+  color: chocolate;
+  transform: translateY(-2px);
+}
+
+.h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.startButton{
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 70px;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    background-color: cyan;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+}
+.startButton:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transform: translateY(-2px);
+}
+
+.steps-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.steps-container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.registration-form {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+.registration-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.registration-form input {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.registration-form input:focus {
+  border-color: chocolate;
+  outline: none;
+}
+
+.registration-form button {
+  padding: 10px 25px;
+  margin: 10px 5px 0;
+  border-radius: 25px;
+  border: none;
+  background-color: chocolate;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #fff;
+  color: chocolate;
+  border: 1px solid chocolate;
+  transform: translateY(-2px);
+}
+
+.step2-location{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.step2-location.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.location-form {
+  background-color: #fff;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin: auto;
+}
+
+.location-form h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.location-form input {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.location-form input:focus {
+  border-color: chocolate;
+  outline: none;
+}
+
+.location-form button {
+  padding: 10px 25px;
+  margin: 10px 5px 0;
+  border-radius: 25px;
+  border: none;
+  background-color: chocolate;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.location-form button:hover {
+  background-color: #fff;
+  color: chocolate;
+  border: 1px solid chocolate;
+  transform: translateY(-2px);
+}
+
+.basket{
+  display: inline;
+  width: 200px;
+  border: #111 solid 5px;
+  padding: 10px;
+  background-color: #3ec500;
+  float: right;
+  margin: 10px;
+}
+
+.basket label{
+  color: rgb(131, 1, 1);
+}
